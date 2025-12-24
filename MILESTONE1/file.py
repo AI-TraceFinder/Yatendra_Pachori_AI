@@ -48,10 +48,6 @@ for p in df['Image'].head(1):
     image_analyse(p)
 
 
-# In[5]:
-
-
-get_ipython().getoutput('pip install opencv-python')
 
 
 # In[6]:
@@ -84,29 +80,3 @@ def preprocessing(path):
     img=normalize(img)
     img=img.reshape(224,224,1)
     return img
-
-
-# In[8]:
-
-
-X=[]
-y=[]
-
-for idx,row in df_suffle.iterrows():
-    img=preprocessing(row['Image'])
-    X.append(img)
-    y.append(row['Brand'])
-
-
-# In[9]:
-
-
-X=np.array(X)
-X
-
-
-# In[11]:
-
-
-df_suffle.to_csv("Scan_dataset.csv", index=False)
-
