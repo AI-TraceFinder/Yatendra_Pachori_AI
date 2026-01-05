@@ -110,7 +110,7 @@ Grad-CAM was applied to visualize which regions of the scanned image influenced 
 |--------------|----------|
 | CNN (from scratch) | ~40% |
 | MobileNetV2 (transfer learning) | ~82% |
-| LBP + SVM (classical ML) | ~90% |
+| LBP + SVM (classical ML) | ~92+% |
 
 - CNN trained from scratch underperformed due to limited data.
 - Transfer learning significantly improved accuracy and generalization.
