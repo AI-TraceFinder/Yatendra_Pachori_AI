@@ -14,7 +14,7 @@ To build and train a CNN model on raw scanned document images and analyze its pe
 #### Approach
 - A custom CNN architecture was designed and trained from scratch using grayscale scanned document images.
 - Images were resized to a fixed resolution.
-- The dataset contained approximately **500+ images**, distributed across multiple scanner brands.
+- The dataset contained approximately **1000+ images**, distributed across multiple scanner brands.
 - Basic image augmentation (rotation and brightness variation) was applied.
 
 #### Results
@@ -57,9 +57,9 @@ To improve generalization and prevent overfitting:
 ---
 
 ### Results (After Transfer Learning)
-- **Training Accuracy:** ~75%
-- **Validation Accuracy:** ~80%
-- **Test Accuracy:** **~82%**
+- **Training Accuracy:** ~82%
+- **Validation Accuracy:** ~84%
+- **Test Accuracy:** ~86+%
 
 #### Observation
 - Transfer learning significantly improved performance.
@@ -109,7 +109,7 @@ Grad-CAM was applied to visualize which regions of the scanned image influenced 
 | Model Approach | Accuracy |
 |--------------|----------|
 | CNN (from scratch) | ~40% |
-| MobileNetV2 (transfer learning) | ~82% |
+| MobileNetV2 (transfer learning) | ~86+% |
 | LBP + SVM (classical ML) | ~92+% |
 
 - CNN trained from scratch underperformed due to limited data.
