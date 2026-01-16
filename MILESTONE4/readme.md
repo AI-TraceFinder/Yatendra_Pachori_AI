@@ -31,7 +31,7 @@ This approach ensures that predictions made through the UI match offline predict
 
 ### Handling TIFF Images
 Scanned documents are often stored in TIFF format and may contain:
-- High resolution (e.g., 300 DPI)
+- High resolution (e.g., 300 DPI, 150 DPI)
 - Higher bit depth (16-bit images)
 
 The UI properly handles these cases by:
